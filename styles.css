@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+nav{
+    /*Fija y sticky */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background:rgb(19, 19, 20);
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav a:hover{
+    background: #f39c12;;
+}
+
+/* todas las seccciones ocupen el alto total d la pantalla*/
+
+section{
+    min-height: 50vh;
+    padding: 100px 20px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#inicio{
+    background: linear-gradient(185deg, #050403, rgb(7, 7, 7) 100%);
+    color: rgb(252, 252, 252);
+}
+
+#inicio h1{
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#inicio p{
+    font-size: 1.3rem;
+    max-width: 600px;
+}
+
+.btn, .btn_about {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    background: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: transform 0.6s; box-shadow: 0.6s;
+}
+
+.btn:hover {
+    background: #f39c12;
+    transform: translateY(-5px);
+     box-shadow: 0 4px 4px rgb(241, 154, 23); 
+}
+     
+.btn_about {
+    background: #0A6FFE !important;
+}
+
+#nosotros {
+    background: whitesmoke;  
+}
+
+#nosotros p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    color: #555;
+}
+
+/* servicios */ 
+#servicios {
+    background: rgb(241, 239, 239);
+    margin: 0;
+}
+
+#servicios h2 {
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.tarjeta {
+    background: whitesmoke;
+    padding: 40px 20px ;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+}
+
+.tarjeta h3 {
+    color: #000000;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* section slogan*/
+
+.slogan {
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+.slogan h2 {
+    font-size: 2.5rem;
+}
+
+.slogan p {
+    font-size: 25px;
+}
+
+/* section galeria*/
+
+#galeria {
+    background: whitesmoke ;
+}
+
+#galeria h2{
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.item-galeria{
+    background: #f39c12;
+    height: 200px;
+    border-radius:4px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: background 0.5s;
+}
+
+.item-galeria:hover{
+    background: whitesmoke;
+}
+
+#contacto{
+    background: whitesmoke;
+}
+
+#contacto h2 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 500px;
+    width: 100%;
+    display: flex ;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 15px;
+    border: 1px solid rgb(255, 254, 254);
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #047bf1;
+    box-shadow: 0 0 5px rgba(226, 86, 5, 0.3);
+}
+
+button[type="submit"]{
+    padding: 15px;
+    background: #047bf1;
+    color: rgb(255, 254, 254);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button[type="submit"]{
+    background: #047bf1;
+}
+
+/*  footer */
+
+footer{
+    background: rgb(19, 19, 20);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
